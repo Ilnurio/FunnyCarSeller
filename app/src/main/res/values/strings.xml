@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Веселый перекуп</string>
+    <string name="Войти">Войти</string>
+    <string name="Зарегестрироваться">Зарегистрироваться</string>
+    <string name="Аватар">Аватар</string>
+    <string name="Готово">Готово</string>
+    <string name="Логин">Логин</string>
+    <string name="Пароль">Пароль</string>
+    <string name="Имя">Имя</string>
+    <string name="Фамилия">Фамилия</string>
+    <string name="Отчество">Отчество</string>
+    <string name="Перейти_к_списку_машин">Перейти_к_списку_машин</string>
+</resources>

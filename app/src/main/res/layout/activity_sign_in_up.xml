@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C675E"
+    android:onClick="onClickAvatar"
+    tools:context="com.example.FunnyCarSeller.SignInUpAct">
+
+    <ImageView
+        android:id="@+id/imAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:onClick="onClickAvatar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <Button
+        android:id="@+id/bAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickAvatar"
+        android:text="@string/Аватар"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imAvatar" />
+
+    <EditText
+        android:id="@+id/idLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/Логин"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bAvatar" />
+
+    <EditText
+        android:id="@+id/idPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/idLogin"
+        app:layout_constraintStart_toStartOf="@+id/idLogin"
+        app:layout_constraintTop_toBottomOf="@+id/idLogin" />
+
+    <EditText
+        android:id="@+id/idName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Имя"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/idPassword"
+        app:layout_constraintStart_toStartOf="@+id/idPassword"
+        app:layout_constraintTop_toBottomOf="@+id/idPassword" />
+
+    <EditText
+        android:id="@+id/idSurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Фамилия"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/idName"
+        app:layout_constraintStart_toStartOf="@+id/idName"
+        app:layout_constraintTop_toBottomOf="@+id/idName" />
+
+    <EditText
+        android:id="@+id/idThirdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Отчество"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/idSurName"
+        app:layout_constraintStart_toStartOf="@+id/idSurName"
+        app:layout_constraintTop_toBottomOf="@+id/idSurName" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickDone"
+        android:text="@string/Готово"
+        app:layout_constraintEnd_toEndOf="@+id/idPassword"
+        app:layout_constraintStart_toStartOf="@+id/idPassword"
+        app:layout_constraintTop_toBottomOf="@+id/idThirdName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
